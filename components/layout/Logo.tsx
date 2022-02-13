@@ -1,5 +1,7 @@
+import classes from './Logo.module.css';
+
 const Logo = () => {
-  return <div>Logo</div>;
+  return <div className={classes.logo}>Sergejs Next Blog</div>;
 };
 
 export default Logo;
