@@ -1,10 +1,21 @@
-import { NextPage } from 'next';
+import { GetStaticProps } from 'next';
 import React from 'react';
 import AllPosts from '../../components/posts/AllPosts';
-import { posts } from '../../dummy-data/posts';
+import { getAllPosts } from '../../helpers/posts-util';
+import { Posts } from '../../types/Post';
 
-const AllPostsPage: NextPage = () => {
+const AllPostsPage = ({ posts }: Posts) => {
   return <AllPosts posts={posts} />;
+};
+
+export const getStaticProps: GetStaticProps = () => {
+  const allPosts = getAllPosts();
+
+  return {
+    props: {
+      posts: allPosts
+    }
+  };
 };
 
 export default AllPostsPage;
