@@ -1,12 +1,23 @@
 ---
-title: 'Mastering Javascript '
-slug: 'mastering-javascript'
-date: '2022-10-15'
-image: 'mastering-js-thumb.png'
-excerpt: 'JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.'
-isFeatured: true
+title: Mastering JavaScript
+excerpt: JavaScript is the most important programming language for web development. You probably don't know it well enough!
+image: mastering-js-thumb.png
+isFeatured: false
+date: '2021-10-30'
 ---
 
-# This is a title
+JavaScript powers the web - it's **the** most important programming language you need to know as a web developer.
 
-This is some regular text with a [link](https://google.com)
+For example, you should understand code like this:
+
+```js
+const basics = 'Okay, that should not be too difficult actually';
+
+function printBasics() {
+  console.log(basics):
+}
+
+printBasics();
+```
+
+Learn more about it [here](https://www.javascripttutorial.net/).
